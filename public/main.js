@@ -5,6 +5,7 @@ let roomId,socketId;
 
 let chance = false;
 let color = 0;
+let notAllowed = 1;
 
 const message = document.querySelector('#message');
 const td = document.querySelectorAll('td');
@@ -314,9 +315,15 @@ socket.on('start-game',gameArray=>{
 			chance=true;
 			color=0;
 		}
-		else
+		else if(gameArray[1].sid.toString()===socket.id.toString())
 		{
 			color=1;
+		}
+		else
+		{
+			do{
+				alert('Room is full');
+			}while(1);
 		}
 		// START THE GAME
 	}
