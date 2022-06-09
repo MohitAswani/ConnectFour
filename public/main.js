@@ -305,13 +305,6 @@ socket.on('start-game',gameArray=>{
 	{
 		message.innerHTML='Waiting for other players to join';	
 	}
-	else if(gameArray.length>2)
-	{
-		do
-		{
-			alert('The room is full');
-		}while(1);
-	}
 	else
 	{
 		message.innerHTML='Start the game';
