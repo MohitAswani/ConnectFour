@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Connect Four</title>
+	<link rel="stylesheet" href="./main.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"> 
+    </script>
+</head>
+<body>
+	<div id="message"></div>
+	<div class="intro">
+		<h1>Start Game</h1>
+	</div>
+	<div class="chip"><div class="inner"></div></div>
+	<div class="board">
+		<table>
+			<tr class="row-1">
+				<td class="column-1"></td>
+				<td class="column-2"></td>
+				<td class="column-3"></td>
+				<td class="column-4"></td>
+				<td class="column-5"></td>
+				<td class="column-6"></td>
+				<td class="column-7"></td>
+			</tr>
+			<tr class="row-2">
+				<td class="column-1"></td>
+				<td class="column-2"></td>
+				<td class="column-3"></td>
+				<td class="column-4"></td>
+				<td class="column-5"></td>
+				<td class="column-6"></td>
+				<td class="column-7"></td>
+			</tr>
+			<tr class="row-3">
+				<td class="column-1"></td>
+				<td class="column-2"></td>
+				<td class="column-3"></td>
+				<td class="column-4"></td>
+				<td class="column-5"></td>
+				<td class="column-6"></td>
+				<td class="column-7"></td>
+			</tr>
+			<tr class="row-4">
+				<td class="column-1"></td>
+				<td class="column-2"></td>
+				<td class="column-3"></td>
+				<td class="column-4"></td>
+				<td class="column-5"></td>
+				<td class="column-6"></td>
+				<td class="column-7"></td>
+			</tr>
+			<tr class="row-5">
+				<td class="column-1"></td>
+				<td class="column-2"></td>
+				<td class="column-3"></td>
+				<td class="column-4"></td>
+				<td class="column-5"></td>
+				<td class="column-6"></td>
+				<td class="column-7"></td>
+			</tr>
+			<tr class="row-6">
+				<td class="column-1"></td>
+				<td class="column-2"></td>
+				<td class="column-3"></td>
+				<td class="column-4"></td>
+				<td class="column-5"></td>
+				<td class="column-6"></td>
+				<td class="column-7"></td>
+			</tr>
+		</table>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
